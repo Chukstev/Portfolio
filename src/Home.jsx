@@ -16,21 +16,23 @@ function Home() {
           className="bg-[url('/Images/My-Image.jpeg')] bg-no-repeat bg-center bg-cover 
              w-full h-[80vh] lg:w-[50vw] lg:h-screen lg:rounded-r-full flex items-center justify-center"
         >
-         <div className="grid">
-             <div>
-            {" "}
-            <p className="outlined-text px-5 text-5xl font-bold lg:text-8xl font-serif">
-              PORTFOLIO
-            </p>
+          <div className="grid">
+            <div>
+              {" "}
+              <p className="outlined-text px-5 text-5xl font-bold lg:text-8xl font-serif">
+                PORTFOLIO
+              </p>
+            </div>
+            <div className="flex justify-center gap-3 mt-4">
+              {/* Social media icons can be added here if needed */}
+              <a href="https://www.linkedin.com/in/anowaichuks" target="_blank">
+                <FaLinkedinIn className="text-3xl text-blue-500 cursor-pointer" />
+              </a>
+              <a href="https://wa.link/pjezog" target="_blank">
+                <FaWhatsappSquare className="text-green-500 text-3xl cursor-pointer" />
+              </a>
+            </div>
           </div>
-          <div className="flex justify-center gap-3 mt-4">
-            {/* Social media icons can be added here if needed */}
-            <a href="https://www.linkedin.com/in/anowaichuks" target="_blank">
-              <FaLinkedinIn className="text-3xl text-blue-500 cursor-pointer" />
-            </a>
-            <a href="https://wa.link/pjezog" target="_blank"><FaWhatsappSquare className="text-green-500 text-3xl cursor-pointer" /></a>
-          </div>
-         </div>
         </div>
         <div className="flex flex-col items-center justify-center w-full lg:w-[50vw] gap-8 p-8">
           <div className="text-center space-y-2">

@@ -1,4 +1,5 @@
 import Header from "./Header.jsx";
+import { FaLinkedinIn, FaWhatsappSquare } from "react-icons/fa";
 import { useState } from "react";
 import { experienceData } from "./Experience.js";
 
@@ -9,7 +10,7 @@ function Experience() {
       <Header />
       <div className="w-full flex flex-col justify-between lg:flex-row">
         {/* Home page content can go here */}
-      <div
+        <div
           // Using the public/Images path (served at /Images/...) and inline
           // styles for background sizing/position/height so it works without
           // Tailwind utilities.
@@ -17,9 +18,23 @@ function Experience() {
           className="bg-[url('/Images/My-Image.jpeg')] bg-no-repeat bg-center bg-cover 
              w-full h-[80vh] lg:w-[50vw] lg:h-screen lg:rounded-r-full flex items-center justify-center"
         >
-          <p className="outlined-text px-5 text-5xl font-bold lg:text-8xl font-serif">
-            PORTFOLIO
-          </p>
+          <div className="grid">
+            <div>
+              {" "}
+              <p className="outlined-text px-5 text-5xl font-bold lg:text-8xl font-serif">
+                PORTFOLIO
+              </p>
+            </div>
+            <div className="flex justify-center gap-3 mt-4">
+              {/* Social media icons can be added here if needed */}
+              <a href="https://www.linkedin.com/in/anowaichuks" target="_blank">
+                <FaLinkedinIn className="text-3xl text-blue-500 cursor-pointer" />
+              </a>
+              <a href="https://wa.link/pjezog" target="_blank">
+                <FaWhatsappSquare className="text-green-500 text-3xl cursor-pointer" />
+              </a>
+            </div>
+          </div>
         </div>
         <div className="flex flex-col items-center justify-center w-full lg:w-[50vw] gap-8 p-8 py-24">
           <div className="text-center">
@@ -35,8 +50,12 @@ function Experience() {
             skills that I now apply with confidence and precision.{" "}
           </p>
           <div>
-            <p className="font-semibold text-l text-center">{experienceData[data].title}</p>
-            <p className="text-justify text-md">{experienceData[data].description}</p>
+            <p className="font-semibold text-l text-center">
+              {experienceData[data].title}
+            </p>
+            <p className="text-justify text-md">
+              {experienceData[data].description}
+            </p>
             <img
               src={experienceData[data].imageUrl}
               alt="experienceImage"
@@ -48,7 +67,7 @@ function Experience() {
                   key={index}
                   onClick={() => setData(index)}
                   className={`rounded-full  m-4 cursor-pointer ${
-                    index === data ? "bg-black h-2 w-6" : "border-1 h-2 w-2"
+                    index === data ? "bg-black h-2 w-6" : "border-2 h-2 w-2"
                   }`}
                 ></span>
               ))}
