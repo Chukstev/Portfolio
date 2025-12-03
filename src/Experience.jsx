@@ -37,17 +37,20 @@ function Experience() {
           </div>
         </div>
         <div className="flex flex-col items-center justify-center w-full lg:w-[50vw] gap-8 p-8 py-24">
-          <div className="text-center">
+          <div className="text-center max-w-2xl">
             <p className="text-xl font-semibold">
               Virtual Assistant - Hands-On Training & Practical Projects
             </p>
             <p className="text-l font-light">2025</p>
           </div>
-          <p className="text-center text-md">
+          <p
+            className="text-center text-md max-w-2xl"
+            style={{ wordBreak: "break-word", overflowWrap: "break-word" }}
+          >
             Through focused virtual assistant training, I completed hands-on
             projects that replicated real client workflows, allowing me to
             develop strong organization, time-management, and productivity-tool
-            skills that I now apply with confidence and precision.{" "}
+            skills that I now apply with confidence and precision.
           </p>
           <div>
             <p className="font-semibold text-l text-center">
@@ -59,7 +62,7 @@ function Experience() {
             <img
               src={experienceData[data].imageUrl}
               alt="experienceImage"
-              className="w-4xl h-96 rounded-2xl mt-6"
+              className="w-full max-w-xl h-96 object-cover rounded-2xl mt-6 mx-auto"
             />
             <div className="flex justify-center lg:justify-center lg:mt-4 lg:items-end lg:h-14">
               {experienceData.map((_, index) => (
