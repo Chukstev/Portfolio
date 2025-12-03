@@ -1,10 +1,10 @@
 import Header from "./Header.jsx";
-import { useState } from "react";
 import { FaLinkedinIn, FaWhatsappSquare } from "react-icons/fa";
+import { MdOutlineEmail } from "react-icons/md";
+
 import { SkillsData } from "./Skills.js";
 
 function Skills() {
-  const { skill, setSkill } = useState(0);
 
   return (
     <div>
@@ -33,6 +33,9 @@ function Skills() {
               </a>
               <a href="https://wa.link/pjezog" target="_blank">
                 <FaWhatsappSquare className="text-green-500 text-3xl cursor-pointer" />
+              </a>
+              <a href="https://www.anowaichukwuemeka@gmail.com" target="_blank">
+                <MdOutlineEmail className="text-3xl text-amber-500 cursor-pointer" />
               </a>
             </div>
           </div>

@@ -1,5 +1,6 @@
 import Header from "./Header.jsx";
 import { FaLinkedinIn, FaWhatsappSquare } from "react-icons/fa";
+import { MdOutlineEmail } from "react-icons/md";
 import { useState } from "react";
 import { experienceData } from "./Experience.js";
 
@@ -33,10 +34,13 @@ function Experience() {
               <a href="https://wa.link/pjezog" target="_blank">
                 <FaWhatsappSquare className="text-green-500 text-3xl cursor-pointer" />
               </a>
+              <a href="https://www.anowaichukwuemeka@gmail.com" target="_blank">
+                <MdOutlineEmail className="text-3xl text-amber-500 cursor-pointer" />
+              </a>
             </div>
           </div>
         </div>
-        <div className="flex flex-col items-center justify-center w-full lg:w-[50vw] gap-8 p-8 py-24">
+        <div className="flex flex-col items-center justify-center w-full lg:w-[50vw] gap-8 p-8 lg:py-24">
           <div className="text-center max-w-2xl">
             <p className="text-xl font-semibold">
               Virtual Assistant - Hands-On Training & Practical Projects

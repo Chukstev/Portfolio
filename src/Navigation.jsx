@@ -50,7 +50,7 @@ function Navigation() {
       {/* mobile slide down menu */}
 
       <div
-        className={`fixed top-0 right-0 py-3 text-center rounded-b-xl w-full h-1/4 bg-white z-50 transform transition-transform duration-300 ease-in-out ${
+        className={`fixed top-0 right-0 py-6 text-center rounded-b-xl w-full h-auto bg-white z-50 transform transition-transform duration-300 ease-in-out ${
           isOpen ? "translate-y-0" : "-translate-y-full"
         }`}
       >
