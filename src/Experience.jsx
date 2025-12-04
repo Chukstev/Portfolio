@@ -66,7 +66,7 @@ function Experience() {
             <img
               src={experienceData[data].imageUrl}
               alt="experienceImage"
-              className="w-full max-w-xl h-96 object-contain rounded-2xl mt-6 mx-auto"
+              className="w-full max-w-xl h-72 object-contain rounded-2xl mt-6 mx-auto"
             />
             <div className="flex justify-center lg:justify-center lg:mt-4 lg:items-end lg:h-14">
               {experienceData.map((_, index) => (
